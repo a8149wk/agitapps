@@ -1,0 +1,27 @@
+/**
+ * Panduan penggunaan folder penyimpanan untuk UI page.
+ * Note: Updated for JDeveloper 12.2.1.4
+ *
+ * @author Hadi Wijaya
+ *
+ * $Id: OSSB Pages Readme 2020-08-04 16:19:13 astragraphia it$.
+ */
+
+Folder ini digunakan untuk menyimpan seluruh UI page yang ada pada aplikasi.
+
+Struktur penyimpanan UI page untuk template disimpan pada folder OSSB dan
+untuk penyimpanan UI page pengembangan aplikasi disimpan pada folder baru
+dengan penamaan folder 4 digit akronim dari aplikasi yang akan dibuat dan
+UI page disimpan di sub folder untuk masing-masing modul.
+
+Contoh sebagai berikut:
+
++-- Web Content
+    +-- Pages    
+        +-- OSSB
+            +-- OSSBModule001 (Penambahan Module Template)
+            +-- ...
+        +-- NAPP (New APPlication)
+            +-- NAPPModule001 (Penambahan Module Pengembangan)
+            +-- NAPPModule002 (Penambahan Module Pengembangan)
+            +-- ...

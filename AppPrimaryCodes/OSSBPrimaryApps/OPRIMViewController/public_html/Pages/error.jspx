@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+        <af:document title="Error" id="d1">
+            <af:form id="f1">
+                <af:panelGroupLayout id="pgl2" layout="vertical" halign="center" inlineStyle="padding-top:158px;">
+                    <af:panelGroupLayout id="pfl1" styleClass="width:200px;" layout="vertical">
+                        <af:panelGroupLayout id="pgl3" halign="center" layout="vertical">
+                            <af:image source="/Images/logoagit-sm.png" altSource="Astragraphia IT" id="i1" shortDesc="Astragraphia IT"/>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl1" layout="vertical"
+                                             inlineStyle="padding-top:15px;">
+                            <af:panelGroupLayout id="pgl4" layout="vertical"
+                                                 inlineStyle="padding-top:15px;width:400px; height:30px; background-color:InfoBackground; border-top-left-radius:0px 0px; border-radius:10px 10px 10px 10px / 10px 10px 10px 10px ; border-style:solid; border-width:thin; border-color:#c6c6c6;">
+                                <af:outputText value="System failure occurred. Contact your site administrator." id="ot1"/>
+                            </af:panelGroupLayout>
+                            <af:panelGroupLayout id="pgl6" layout="horizontal"
+                                             inlineStyle="border-top: 1px solid #efefef;padding-top:15px;">
+                            <af:button text="Back to Main Page" id="backButton" inlineStyle="font-size:small;width:285px;"
+                                       action="Main"/>
+                            </af:panelGroupLayout>
+                            <af:panelGroupLayout id="pgl5" layout="vertical" inlineStyle="padding-top:20px;">
+                                <af:outputText value="Copyright &#169; 2020, Astragraphia IT and/or its affiliates. All rights reserved."
+                                               id="ot2"/>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+            </af:form>
+        </af:document>
+  </f:view>
+</jsp:root>

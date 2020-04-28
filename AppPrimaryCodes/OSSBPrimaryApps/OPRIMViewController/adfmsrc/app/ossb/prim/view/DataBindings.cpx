@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.22.48" id="DataBindings"
+             SeparateXMLFiles="false" Package="app.ossb.prim.view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/Pages/appService.jsf" usageId="app_ossb_prim_view_appServicePageDef"/>
+    <page path="/Pages/main.jsf" usageId="app_ossb_prim_view_mainPageDef"/>
+    <page path="/Pages/manageUsers.jsf" usageId="app_ossb_prim_view_manageUsersPageDef"/>
+    <page path="/Pages/masterDataGeneral.jsf" usageId="app_ossb_prim_view_masterDataGeneralPageDef"/>
+    <page path="/Pages/menuManager.jsf" usageId="app_ossb_prim_view_menuManagerPageDef"/>
+    <page path="/Pages/myProfile.jsf" usageId="app_ossb_prim_view_myProfilePageDef"/>
+    <page path="/Pages/roleSetting.jsf" usageId="app_ossb_prim_view_roleSettingPageDef"/>
+    <page path="/Pages/error404.jspx" usageId="app_ossb_prim_view_error404PageDef"/>
+    <page path="/Pages/error.jspx" usageId="app_ossb_prim_view_errorPageDef"/>
+    <page path="/Pages/login.jspx" usageId="app_ossb_prim_view_loginPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="app_ossb_prim_view_appServicePageDef" path="Pages.appServicePageDef"/>
+    <page id="app_ossb_prim_view_mainPageDef" path="Pages.mainPageDef"/>
+    <page id="app_ossb_prim_view_manageUsersPageDef" path="Pages.manageUsersPageDef"/>
+    <page id="app_ossb_prim_view_masterDataGeneralPageDef" path="Pages.masterDataGeneralPageDef"/>
+    <page id="app_ossb_prim_view_menuManagerPageDef" path="Pages.menuManagerPageDef"/>
+    <page id="app_ossb_prim_view_myProfilePageDef" path="Pages.myProfilePageDef"/>
+    <page id="app_ossb_prim_view_roleSettingPageDef" path="Pages.roleSettingPageDef"/>
+    <page id="app_ossb_prim_view_error404PageDef" path="Pages.error404PageDef"/>
+    <page id="app_ossb_prim_view_errorPageDef" path="Pages.errorPageDef"/>
+    <page id="app_ossb_prim_view_loginPageDef" path="Pages.loginPageDef"/>
+  </pageDefinitionUsages>
+</Application>

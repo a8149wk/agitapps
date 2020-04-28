@@ -1,0 +1,399 @@
+@charset "UTF-8";
+
+/**ADFFaces_Skin_File / DO NOT REMOVE**/
+@namespace af "http://xmlns.oracle.com/adf/faces/rich";
+@namespace dvt "http://xmlns.oracle.com/dss/adf/faces";
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,700');
+
+/** OSSB_Default_Stylesheet **/
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/Poppins-Regular.otf'); /* IE9 Compat Modes */
+    src: url('../../fonts/Poppins-Regular.otf?#iefix')format('embedded-opentype'); /* IE6-IE8 */
+}
+
+.poppins:alias {
+    font-family: 'Poppins';
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: small !important;
+    border-width: 0;
+    border-color: #2E3A40;
+    color: #FFF;
+}
+
+.MainContent {
+    width: calc(100% -250px);
+}
+
+.LeftMenu {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #dadada;
+    border-right: 1px solid #2980b9;
+    overflow-x: hidden;
+}
+
+.MenuTop {
+    position: fixed;
+    top: 0px;
+    height: 85px;
+    width: 250px;
+}
+
+.MediaWide {
+    display: inline;
+}
+
+.MediaNarrow {
+    display: none;
+}
+
+.MainArea {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 250px;
+    overflow-x: hidden;
+}
+@media screen and (max-width:950px) {
+    .MainContent {
+    }
+    .MediaNarrow {
+        display: inline;
+    }
+    .MediaWide {
+        display: none;
+    }
+    .LeftMenu {
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #dadada;
+        overflow-x: hidden;
+    }
+    .MainArea {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0px;
+        overflow-x: hidden;
+    }
+}
+
+.ossb-heading-title {
+    font-family: Poppins,sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ossb-pagedesc-empty {
+    font-family: Poppins,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.ossb-pagedesc {
+    font-family: Poppins,sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.ossb-text-desc {
+    font-family: Poppins,sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 500px;
+    display: inline-block;
+}
+
+.ossb-text-name {
+    font-family: Poppins,sans-serif;
+    font-weight: bold;
+}
+
+af|button {
+    font-family: Poppins,sans-serif;
+    border: none;
+    color: #fff;
+    background: #3498db;
+    border: 1px solid transparent;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 45px;
+    font-weight:lighter;
+    text-shadow: none; 
+}
+
+af|button:hover{
+    font-family: Poppins,sans-serif;
+    border: 1px solid #3498db;
+    color: #fff;
+    background: #e7e7e7;
+    border: 1px solid transparent;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 45px;
+    font-weight:lighter;
+}
+
+/**OSSB_Menu_Left **/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.middle {
+    position: fixed;
+    top: 85px;
+    left: 0;
+    height: 100%;
+    transform: translate(0%, 0%);
+}
+
+.menu {
+    font-family: Poppins,sans-serif;
+    font-size: 15px;
+    display: block;
+    width: 250px;
+    border-radius: 8px;
+    height: 100%;
+    background-color: #dadada;
+}
+
+.item {
+    font-family: Poppins,sans-serif;
+    font-size: 15px;
+    border-top: 1px solid #2980b9;
+    overflow: hidden;
+}
+
+.btn {
+    font-family: Poppins,sans-serif;
+    font-size: 15px;
+    display: block;
+    padding: 16px 20px;
+    background: #3498db;
+    color: white;
+    position: relative;
+}
+
+.btn:before {
+    font-family: Poppins,sans-serif;
+    font-size: 15px;
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #3498db;
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+
+.btn i {
+    font-family: Poppins,sans-serif;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.smenu {
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+    background: #424242;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.smenu a {
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+    display: block;
+    padding: 16px 46px;
+    color: white;
+    margin: 4px 0;
+    position: relative;
+}
+
+.smenu:before {
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+    content: "";
+    position: relative;
+    width: 6px;
+    height: 100%;
+    background: #3498db;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.smenu a:hover:before {
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+    opacity: 1;
+}
+
+.item:target .smenu {
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+    max-height: 30em;
+}
+/** OSSB ADF Input Text **/
+af|inputText::content, af|inputText::content:selected, af|inputText::content:focus, af|inputText::content:hover {
+    font-family: Poppins,sans-serif;
+    font-size: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 4px 0px;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #b2c2cd;
+    border-radius: 4px;
+    cursor: text;
+    padding: 6px 10px;
+    transition: border .1s linear;
+    min-height: 40px;
+}
+/** OSSB ADF Input Date **/
+af|inputDate::content, af|inputDate::content:selected, af|inputDate::content:focus, af|inputDate::content:hover {
+    font-family: Poppins,sans-serif;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 4px 0px;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #b2c2cd;
+    border-radius: 4px;
+    cursor: text;
+    padding: 6px 10px;
+    transition: border .1s linear;
+    min-height: 40px;
+}
+/** OSSB ADF Select One Choice **/
+af|selectOneChoice::content {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 4px 0px;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #b2c2cd;
+    border-radius: 4px;
+    cursor: text;
+    transition: border .1s linear;
+    min-height: 40px;
+    box-shadow: none;
+    position: relative;
+    line-height: 0px;
+    background: #fff;
+    overflow: hidden;
+    background-image: url("../../../Images/soc_down_arrow.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+/** OSSB ADF Table **/
+af|table::data-row {
+    height: 50px;
+    padding: 10px;
+}
+
+af|table {
+    border: none;
+}
+
+af|column::column-header-cell {
+    margin: 0px 15px 0px 15px;
+    font-size: medium;
+    background-color: transparent;
+    height: 40px;
+    border-color: transparent;
+    border-bottom: #C6C6C6 solid 2px;
+}
+
+.ossb-badge-row-table {
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-left: 8px;
+    font-size: 8px;
+    padding: 4px;
+    display: inline-block;
+    background-color: #2980b9;
+    color: White;
+    border-radius: 3px;
+    border: 1px #2980b9 solid;
+}
+/** OSSB ADF Panel Stretch **/
+.ossb-panel-force-stretch {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: table;
+    z-index: 300;
+}
+/** OSSB Control Page Style **/
+.ossb-ctrlpg-title {
+    font-size: 32px;
+    color: Black;
+    margin-top: 50px;
+    display: block;
+}
+
+.ossb-ctrlpg-desc {
+    font-size: 24px;
+    color: #c6c6c6;
+    margin-top: 15px;
+    display: block;
+}
+
+.ossb-ctrlpg-footer {
+}
+
+/** OSSB Panel Collection Style **/
+.x17q {
+    border-color: White;
+    padding-bottom: 8px;
+}

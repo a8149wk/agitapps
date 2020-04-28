@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <exception-handler>error</exception-handler>
+  <view id="myProfile">
+    <page>/Pages/myProfile.jsf</page>
+  </view>
+  <view id="manageUsers">
+    <page>/Pages/manageUsers.jsf</page>
+  </view>
+  <view id="masterDataGeneral">
+    <page>/Pages/masterDataGeneral.jsf</page>
+  </view>
+  <view id="roleSetting">
+    <page>/Pages/roleSetting.jsf</page>
+  </view>
+  <view id="menuManager">
+    <page>/Pages/menuManager.jsf</page>
+  </view>
+  <view id="appService">
+    <page>/Pages/appService.jsf</page>
+  </view>
+  <view id="main">
+    <page>/Pages/main.jsf</page>
+  </view>
+  <view id="error">
+    <page>/Pages/error.jspx</page>
+  </view>
+  <view id="login">
+    <page>/Pages/login.jspx</page>
+  </view>
+  <view id="error404">
+    <page>/Pages/error404.jspx</page>
+  </view>
+  <control-flow-rule id="__1">
+    <from-activity-id>*</from-activity-id>
+    <control-flow-case id="__2">
+      <from-outcome>MyProfile</from-outcome>
+      <to-activity-id>myProfile</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__3">
+      <from-outcome>ManageUsers</from-outcome>
+      <to-activity-id>manageUsers</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__4">
+      <from-outcome>MasterDataGeneral</from-outcome>
+      <to-activity-id>masterDataGeneral</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__5">
+      <from-outcome>RoleSetting</from-outcome>
+      <to-activity-id>roleSetting</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__6">
+      <from-outcome>MenuManager</from-outcome>
+      <to-activity-id>menuManager</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__7">
+      <from-outcome>AppService</from-outcome>
+      <to-activity-id>appService</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__8">
+      <from-outcome>Main</from-outcome>
+      <to-activity-id>main</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__12">
+      <from-outcome>Error</from-outcome>
+      <to-activity-id>error</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__13">
+      <from-outcome>Error404</from-outcome>
+      <to-activity-id>error404</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__9">
+    <from-activity-id>login</from-activity-id>
+    <control-flow-case id="__10">
+      <from-outcome>Success</from-outcome>
+      <to-activity-id>main</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <managed-bean id="__11">
+    <managed-bean-name>LoginBean</managed-bean-name>
+    <managed-bean-class>app.ossb.prim.bean.login.LoginBean</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+  </managed-bean>
+</adfc-config>

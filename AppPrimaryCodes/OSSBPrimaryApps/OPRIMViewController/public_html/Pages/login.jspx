@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="Login" id="d1">
+            <af:form id="f1" defaultCommand="loginButton" targetFrame="_self">
+                <af:panelGroupLayout id="pgl2" layout="vertical" halign="center" inlineStyle="padding-top:150px;">
+                    <af:panelFormLayout id="pfl1" styleClass="width:200px;">
+                        <af:panelGroupLayout id="pgl3" halign="center" layout="vertical"
+                                             inlineStyle="border-bottom: 1px solid #efefef;padding-bottom:5px;">
+                            <af:image source="/Images/logoagit-sm.png" altSource="Astragraphia IT" id="i1" shortDesc="Astragraphia IT"/>
+                        </af:panelGroupLayout>
+                        <af:inputText label="User Name" id="it1" value="#{LoginBean.uname}" simple="true" autoComplete="off"
+                                      contentStyle="width:300px;" placeholder="User Name"/>
+                        <af:inputText label="Password" id="it2" value="#{LoginBean.pwd}" secret="true"  autoComplete="off" simple="true"
+                                      contentStyle="width:300px;" placeholder="Password"/>
+                        <af:panelGroupLayout id="pgl1" layout="horizontal"
+                                             inlineStyle="border-top: 1px solid #efefef;padding-top:5px;">
+                            <af:button text="Signing On" id="loginButton" inlineStyle="font-size:small;width:285px;" action="#{LoginBean.doLogin}"/>
+                        </af:panelGroupLayout>
+                    </af:panelFormLayout>
+                    <af:panelGroupLayout id="pgl5" layout="vertical" inlineStyle="padding-top:20px;">
+                        <af:outputText value="Copyright &#169; 2020, Astragraphia IT and/or its affiliates. All rights reserved."
+                                       id="ot2"/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+            </af:form>
+        </af:document>
+    </f:view>
+</jsp:root>

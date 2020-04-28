@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.22.48" id="masterDataGeneralPageDef"
+                Package="Pages">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <taskFlow id="ossbmdgeneral1" taskFlowId="/WEB-INF/ossb-md-general.xml#ossb-md-general" activation="deferred"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding"/>
+  </executables>
+  <bindings/>
+</pageDefinition>

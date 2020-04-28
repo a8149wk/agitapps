@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="roleSetting.jsf" id="d1">
+        <af:form id="f1">
+            <af:pageTemplate viewId="/PageTemplates/OSSBDashboard.jsf" id="pt1">
+                <f:facet name="BodyContent">
+                    <af:panelGroupLayout id="pgl1" layout="vertical" inlineStyle="padding-left:35px;padding-top:25px;">
+                        <af:outputText value="Role Setting" id="ot1" styleClass="ossb-heading-title"/>
+                    </af:panelGroupLayout>
+                </f:facet>
+                <f:facet name="BodyTopBar"/>
+            </af:pageTemplate>
+        </af:form>
+    </af:document>
+</f:view>
